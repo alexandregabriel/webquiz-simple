@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Quiz Simples | Alexandre Gabriel | Coding Nepal</title>
+    <link rel="stylesheet" href="style.css">
+    <!--  FontAwesome CDN Link for Icons  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+
+    <!-- Start Quiz Button  -->
+    <div class="start_btn">
+        <button>Iniciar Quiz</button>
+    </div>
+    
+    <!--  Info Box  -->
+    <div class="info_box">
+        <div class="info_title">
+            <span>Regras do Quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">
+               1. Você têm apenas <span>15 segundos</span> para cada pergunta.
+            </div>
+
+            <div class="info">
+              2. Ao selecionar uma resposta, você não pode selecionar.
+            </div>
+
+            <div class="info">
+               3. Você não poderá selecionar nenhuma resposta se o tempo esgotar.
+            </div>
+
+            <div class="info">
+               4. Você não pode sair do Quiz enquanto estiver jogando.
+            </div>
+
+            <div class="info">
+              5. A cada resposta certa, você ganhará 1 ponto.
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Abandonar</button>
+            <button class="restart">Continuar</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">
+                Web Quiz Simples
+            </div>
+            <div class="timer">
+                <div class="time_text">
+                    Restante
+                </div>
+    
+                <div class="timer_sec">
+                    15
+                </div>
+            </div>
+
+            <div class="time_line"></div>
+            
+
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- <span>What does HTML stand for?</span> -->
+            </div>
+
+            <div class="option_list">
+                
+                <!-- <div class="option">
+                    
+                    <span>Hyper Text Preprocessor</span>
+                    
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+
+                </div>
+
+                <div class="option">
+                    
+                    <span>Hyper Text Markup Language</span>
+                    
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+
+                </div>
+
+                <div class="option">
+                    
+                    <span>Hyper Text Multiple Language</span>
+                    
+                    
+
+                </div>
+
+                <div class="option">
+                    
+                    <span>Hyper Text Multi Language</span>
+                    
+                    
+
+                </div> -->
+
+            </div>
+
+            
+
+        </section>
+
+        <!-- Quiz Box Footer -->
+
+        <footer>
+            <div class="total_que">
+                <!-- <span><p>2</p>of<p>5</p>Questions</span> -->
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+
+        <div class="complete_text">
+            Você concluiu o Quiz!
+        </div>
+
+        <div class="score_text">
+            <!-- <span>and sorry, you got only <p>2</p> out of<p>5</p></span> -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Novamente</button>
+            <button class="quit">Abandonar</button>
+        </div>
+    </div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
