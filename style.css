@@ -3,10 +3,37 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+/* Colors:
+#007bff
+#0263ca;
+lightgray
+#FFF
+#cce5ff
+#b8daff
+aliceblue
+#004085
+
+
+
+
+*/
+
+
 :root {
-    --primary-color: #007bff;
-    --secondary-color: #0263ca;
+    /* Change favorite color */
+    --hue-color: 260;   /*Hue color base - Purple 250 - Green 142 - Blue 230 - Pink 340 */
+
+    /* --primary-color: #007bff; */
+    --primary-color: hsl(var(--hue-color), 100%, 50%);
+    /* --secondary-color: #0263ca; */
+    --secondary-color: hsl(var(--hue-color), 98%, 40%);
     --border-color-lgray: lightgray;
+    --background-lighter: hsl(var(--hue-color), 100%, 90%);
+    --background-secondary: hsl(var(--hue-color), 98%, 76%);
+    --container-color: #fff;
+    --border-second-color: hsl(var(--hue-color), 100%, 86%);
+    --background-secondary-lighter: hsl(var(--hue-color), 100%, 97%);
+    --optionlist-text-color: hsl(var(--hue-color), 100%, 26%);
 }
 
 *{
@@ -167,8 +194,8 @@ body{
     justify-content: space-between;
     width: 145px;
     height: 45px;
-    background: #cce5ff;
-    border: 1px solid #b8daff;
+    background: var(--background-lighter);
+    border: 1px solid var(border-second-color);
     border-radius: 5px;
     padding: 0 8px;
 }
@@ -197,7 +224,7 @@ body{
     bottom: 0px;
     left: 0px;
     height: 3px;
-    background: #007bff;
+    background: var(--primary-color);
 }
 
 .quiz_box section{
@@ -215,8 +242,8 @@ body{
 }
 
 section .option_list .option{
-    background: aliceblue;
-    border: 1px solid #84c5fe;
+    background: var(--background-secondary-lighter);
+    border: 1px solid var(--background-secondary);
     border-radius: 5px;
     padding: 8px 15px;
     margin-bottom: 15px;
@@ -229,9 +256,9 @@ section .option_list .option{
 }
 
 section .option_list .option:hover{
-    color: #004085;
-    background: #cce5ff;
-    border-color: #b8daff;
+    color: var(--optionlist-text-color);
+    background: var(--background-lighter);
+    border-color: var(border-second-color);
 }
 
 .option_list .option:last-child{
@@ -309,15 +336,15 @@ footer .next_btn{
     border: none;
     outline: none;
     color: #fff;
-    background: #007bff;
+    background: var(--primary-color);
     border-radius: 5px;
-    border: 1px solid #007bff;
+    border: 1px solid var(--primary-color);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 footer .next_btn:hover{
-    background: #0263ca;
+    background: var(--secondary-color);
 }
 
 .result_box{
@@ -337,7 +364,7 @@ footer .next_btn:hover{
 
 .result_box .icon{
     font-size: 100px;
-    color: #007bff;
+    color: var(--primary-color);
     margin-bottom: 10px;
 }
 
@@ -372,7 +399,7 @@ footer .next_btn:hover{
     font-size: 18px;
     font-weight: 500;
     border-radius: 5px;
-    border: 1px solid #007bff;
+    border: 1px solid var(--primary-color);
     cursor: pointer;
     transition: all 0.3s ease;
 
